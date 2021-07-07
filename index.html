@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Do App</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <!-- Main Container -->
+  <div class="container">
+    <!-- Title -->
+    <div class="title">
+      <h1>Notes App</h1>
+    </div>
+    <!-- Content Div -->
+    <div class="main-content" id="main-content">
+      <!-- Content -->
+      <div class="content" id="content-border">
+        <div class="note border">
+          <div class="components">
+            <div class="components-right">
+              <svg id="delete" class="delete icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-reactroot="">
+                <path d="M16.56 22H7.44C6.91 22 6.47 21.59 6.44 21.06L5.5 6H18.5L17.56 21.06C17.53 21.59 17.09 22 16.56 22Z" clip-rule="evenodd" fill="#ffffff" fill-rule="evenodd" undefined="1"></path>
+                <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1" stroke="#000000" d="M5.5 6H18.5"></path>
+                <path d="M8.5 3C8.5 2.44772 8.94772 2 9.5 2H14.5C15.0523 2 15.5 2.44772 15.5 3V4C15.5 4.55228 15.0523 5 14.5 5H9.5C8.94772 5 8.5 4.55228 8.5 4V3Z" fill="#ffffff" clip-rule="evenodd" fill-rule="evenodd" undefined="1"></path>
+                <path d="M19.5 6H4.5C4.22 6 4 5.78 4 5.5V3.5C4 3.22 4.22 3 4.5 3H19.5C19.78 3 20 3.22 20 3.5V5.5C20 5.78 19.78 6 19.5 6Z" clip-rule="evenodd" fill="#ffffff" fill-rule="evenodd" undefined="1"></path>
+                </svg>
+                <svg id="edit" class="edit icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-reactroot="">
+                  <path fill="#ffffff" d="M19.229 8.65903L15.341 4.77097L5.01001 15.11L8.89001 18.99L19.229 8.65903Z" undefined="1"></path>
+                  <path fill="#ffffff" d="M5.01 15.11L8.89 18.99L2 22L5.01 15.11Z" undefined="1"></path>
+                  <path fill="#ffffff" d="M19.2301 8.66001L15.3401 4.77001L17.8101 2.30001C18.2001 1.91001 18.8301 1.91001 19.2201 2.30001L21.6901 4.77001C22.0801 5.16001 22.0801 5.79001 21.6901 6.18001L19.2301 8.66001Z" undefined="1"></path>
+                  <path stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1" stroke="#000000" d="M5.01001 15.11L8.89001 18.99"></path>
+                  <path stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1" stroke="#000000" d="M19.2301 8.66002L15.3401 4.77002"></path>
+              </svg>
+            </div>
+          </div>
+          <!-- Text content -->
+          <div class="text-content" id="text-content">
+            <p id="text">Add your text here</p>
+          </div>
+        </div>
+      </div>
+      <!-- Add Button -->
+      <div class="add-button border">
+        <a href="#" class="add" id="add">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-reactroot="">
+            <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="#ffffff" fill="none" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"></path>
+            <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="#ffffff" d="M6 12H18"></path>
+            <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="#ffffff" d="M12 18V6"></path>
+            </svg>            
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="text-container" class="hidden" id="textarea">
+    <textarea  type="text" name="Type here..." id="type">Hit Enter when done</textarea>
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>
